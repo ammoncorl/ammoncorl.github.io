@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:F430CC1C-04F9-460A-ABDA-B4D048BEC710</id>
+ <title>Page list Atom feed</title>
+ <updated>2019-04-16T08:52:16-07:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:2FDCFD35-D7FB-4711-807A-651A1DA7964D</id>
+  <title>Home</title>
+  <title xmlns="urn:iweb:">Home</title>
+  <in-navbar xmlns="urn:iweb:">2FDCFD35-D7FB-4711-807A-651A1DA7964D</in-navbar>
+  <link rel="alternate" href="Home.html"/>
+  <updated>2019-04-16T08:52:16.001-07:00</updated>
+  <content>Home</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:C05EB415-3B45-467E-885A-2C7EA1F36BA7</id>
+  <title>Research</title>
+  <title xmlns="urn:iweb:">Research</title>
+  <in-navbar xmlns="urn:iweb:">C05EB415-3B45-467E-885A-2C7EA1F36BA7</in-navbar>
+  <link rel="alternate" href="Research.html"/>
+  <updated>2019-04-16T08:52:16.002-07:00</updated>
+  <content>Research</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:9E93379F-B86F-48EB-971F-302FE173D93B</id>
+  <title>Publications</title>
+  <title xmlns="urn:iweb:">Publications</title>
+  <in-navbar xmlns="urn:iweb:">9E93379F-B86F-48EB-971F-302FE173D93B</in-navbar>
+  <link rel="alternate" href="Publications.html"/>
+  <updated>2019-04-16T08:52:16.003-07:00</updated>
+  <content>Publications</content>
+ </entry>
+ <entry>
+  <id>urn:iweb:9C35910A-8FD1-461B-998D-519AACD5337A</id>
+  <title>Contact</title>
+  <title xmlns="urn:iweb:">Contact</title>
+  <in-navbar xmlns="urn:iweb:">9C35910A-8FD1-461B-998D-519AACD5337A</in-navbar>
+  <link rel="alternate" href="Contact.html"/>
+  <updated>2019-04-16T08:52:16.004-07:00</updated>
+  <content>Contact</content>
+ </entry>
+</feed>
