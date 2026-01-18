@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-jaffacitweb-n3-active wf-jaffacitweb-i3-active wf-jaffacitweb-n7-active wf-jaffacitweb-i7-active wf-active"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Nielsen Lab / papers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Nielsen Lab Research" href="https://nielsen-lab.github.io//feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="Ammon_Corl_papers_files/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="Ammon_Corl_papers_files/callogo.png">
+
+	<!-- Typekit -->
+	<script async="" src="Ammon_Corl_papers_files/analytics.js"></script><script src="Ammon_Corl_papers_files/xeu8jut.js" async=""></script><script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="Ammon_Corl_papers_files/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="Ammon_Corl_papers_files/bootstrap.min.js"></script><style type="text/css">.bighead,.bigtitle,.head,.navbar-brand,.navbar-nav,.navbar-text,.note,.smallhead,.smallnote,.title,h1,h2,h3,h4,h5,h6{font-family:"museo-sans",sans-serif;}.tk-jaf-facitweb,body{font-family:"jaf-facitweb",sans-serif;}</style><style type="text/css">
+	@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/635674/00000000000000000000e800/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:jaf-facitweb;src:url(https://use.typekit.net/af/f95b7a/0000000000000000000132a8/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/f95b7a/0000000000000000000132a8/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/f95b7a/0000000000000000000132a8/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:jaf-facitweb;src:url(https://use.typekit.net/af/cce6eb/0000000000000000000132a9/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/cce6eb/0000000000000000000132a9/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/cce6eb/0000000000000000000132a9/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:jaf-facitweb;src:url(https://use.typekit.net/af/de73e0/0000000000000000000132ad/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/de73e0/0000000000000000000132ad/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/de73e0/0000000000000000000132ad/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:jaf-facitweb;src:url(https://use.typekit.net/af/879306/0000000000000000000132ae/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/879306/0000000000000000000132ae/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/879306/0000000000000000000132ae/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-stretch:normal;font-display:auto;}.bighead1 {font-family:"museo-sans",sans-serif;}
+.bigtitle1 {font-family:"museo-sans",sans-serif;}
+.head1 {font-family:"museo-sans",sans-serif;}
+.navbar-brand1 {font-family:"museo-sans",sans-serif;}
+.navbar-nav1 {font-family:"museo-sans",sans-serif;}
+.navbar-text1 {font-family:"museo-sans",sans-serif;}
+.note1 {font-family:"museo-sans",sans-serif;}
+.smallhead1 {font-family:"museo-sans",sans-serif;}
+.smallnote1 {font-family:"museo-sans",sans-serif;}
+.title1 {font-family:"museo-sans",sans-serif;}
+    </style>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="https://ammoncorl.github.io/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="Ammon_Corl_research_files/callogo.png">
+					Ammon Corl</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="https://ammoncorl.github.io/research">Research</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="https://ammoncorl.github.io/papers/">Papers</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="https://ammoncorl.github.io/news">News</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="https://ammoncorl.github.io/multimedia">Multimedia</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="https://ammoncorl.github.io/contact"> <a class="mx-1" href="https://ammoncorl.github.io/contact">Contact</a></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	<center>
+	  This page contains links to my papers. Please email me if you unable to access a paper. For analytics related to my papers please see <a href="https://scholar.google.com/citations?user=K7r_6okAAAAJ&hl=en">Google Scholar</a>.
+	</center>
+<div class="bigspacer"></div>
+
+
+
+
+
+
+
+
+    
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2026</h1>
+<hr style="height:3px;border:none;color:#808088;background-color:#808088;">    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 paperbox">
+      <div class="media">
+        <div class="media-body">
+          <div class="smallhead mb-1"><a href="https://www.science.org/doi/10.1126/science.adw8265">The genetics, evolution, and maintenance of a biological rock-paper-scissors game.</a> </div>
+          <p class="note1"><strong>Corl, A.</strong>, Guzman, A., Bi, K., Vazquez, J.M., Smith,  L.L., Blaimont, P., Spranger, R., Cooper, R.D., Miles, D., Goldberg, A.,  Gao, J., Xiang, X., Zhou, Y., Li, Q., Zhang, G., Sudmant, P.H., Bowie,  R.C.K., McGuire, J.A., Sinervo, B., Nielsen, R. Science.   391: 69 - 74. </p>
+        </div>
+        <a href="https://www.science.org/doi/10.1126/science.adw8265"> <img class="ml-3" width="100" src="Ammon%20Corl%20_%20news_files/Blue_morph_head_on.jpg"> </a> </div>
+      <div class="bigspacer"></div>
+      <div class="spacer"></div>
+    </div>
+    <div class="col-md-12">
+		
+		   <h1>2025</h1>
+    <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+    <img src="Ammon_Corl_research_files/Rock-paper-scissors_morphs_w_behavior_for_web.png" width="100" style="float:right">
+    <p>Scarpetta, S.G., Karin, B.R.,<strong> Corl, A.</strong>,   McGuire, J.A.. The evolutionary history of dragon lizards (Squamata:  Agamidae) revealed by phylogenomics. 2025. Systematic Biology, syaf088.  <a title="https://doi.org/10.1086/735669" href="https://doi.org/10.1093/sysbio/syaf088">[link]</a></p>
+    <div class="bigspacer"></div>
+		
+		 <img src="Ammon_Corl_research_files/Rock-paper-scissors_morphs_w_behavior_for_web.png" width="100" style="float:right">
+    <p>Domer, A., Misraje, T.R., Xing, D., Arango, B.G., Selleghin-Veiga, G.,      <strong>Corl, A.</strong>, Bowie, R.C.K., McGuire, J.A., Sweazea, K.L.,Vázquez-Medina, J.P., Dudley, R. 2025. Myo-inositol is a key regulator of avian metabolism:  From mechanisms to seasonal behavior. Science Advances. 11: 1-9.  <a title="https://doi.org/10.1086/735669" href="https://www.science.org/doi/10.1126/sciadv.adv2794">[link]</a></p>
+    <div class="bigspacer"></div>
+		
+	<img src="Ammon_Corl_research_files/Rock-paper-scissors_morphs_w_behavior_for_web.png" width="100" style="float:right">
+    <p>Wang-Claypool, C. Y., Corl, A., Jones,  J., McGuire, J. A., Bowie, R. C. K., and Dudley, R.  2025.  The proof  is in the plumage: a method for detecting dietary ethanol exposure in  birds by testing for ethyl glucuronide in feathers.  Ecological and  Evolutionary Physiology. 98: 1-13.  <a title="https://doi.org/10.1086/735669" href="https://www.journals.uchicago.edu/doi/10.1086/735669">[link]</a></p>
+    <div class="bigspacer"></div>
+		
+	<img src="Ammon_Corl_research_files/Rock-paper-scissors_morphs_w_behavior_for_web.png" width="100" style="float:right">
+    <p>Scarpetta, S. G., Fisher, R. N., Karin, B. R., Niukula, J. B., Corl, A., Jackman, T. R., McGuire, J. A..  2025.  Iguanas rafted more than 8,000 km from North America to Fiji. PNAS. 122: 1-10.  <a title="https://doi.org/10.1073/pnas.2318622122" href="https://doi.org/10.1073/pnas.2318622122">[link]</a></p>
+    <div class="bigspacer"></div>
+		
+      <h1>&nbsp;</h1>
+      <h1>2025</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+    </div>
+    <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/sedaDNA-sim.pdf" class="off">Challenges in Detecting Ecological Interactions Using Sedimentary Ancient DNA Data</a></div>
+        <p class="note">Callahan et al. 2025. Environmental DNA.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/sedaDNA-sim.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/sedaDNA-sims.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2024</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+
+    </div>
+  </div>
+  <div class="row">
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/clues2.pdf" class="off">Fast and accurate estimation of selection coefficients and allele histories from ancient and modern DNA</a></div>
+        <p class="note">Vaughn and Nielsen 2024. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/clues2.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/clues2.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/selectionlandscape.pdf" class="off">The selection landscape and genetic legacy of ancient Eurasians</a></div>
+        <p class="note">Irving-Pease,   Refoyo-Martínez,   Barrie,   Ingason,   Pearson,  and Fischer et al. 2024. Nature.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/selectionlandscape.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/eurasiaselection.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/turnoverdenmark.pdf" class="off">100 ancient genomes show repeated population turnovers in Neolithic Denmark</a></div>
+        <p class="note">Allentoft,   Sikora,  and  Fischer et al. 2024. Nature.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/turnoverdenmark.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/denmark.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/popgeneurasia.pdf" class="off">Population genomics of post-glacial western Eurasia</a></div>
+        <p class="note">Allentoft,   Sikora,  Refoyo-Martínez, Irving-Pease,   Fischer,   Barrie,  and Ingason et al. 2024. Nature.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/popgeneurasia.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/eurasia.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2023</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+
+    </div>
+  </div>
+  <div class="row">
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/adbayes.pdf" class="off">Bayesian inference of admixture graphs on Native American and Arctic populations</a></div>
+        <p class="note">Nielsen and Vaughn et al. 2023. PLOS Genetics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/adbayes.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/adbayes.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2022</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+
+    </div>
+  </div>
+  <div class="row">
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/sconce2.pdf" class="off">SCONCE2: jointly inferring single cell copy number profles and tumor evolutionary distances</a></div>
+        <p class="note">Hui and Nielsen 2022. BMC Bioinformatics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/sconce2.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/sconce2.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/LanguageBarriers.pdf" class="off">Overcoming Language Barriers in Academia: Machine Translation Tools and a Vision for a Multilingual Future</a></div>
+        <p class="note">Steigerwald et al. 2022. BioScience.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/LanguageBarriers.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/languagebarriers.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/2022Phrynocephalus.pdf" class="off">Population
+ Genomics of Variegated Toad-Headed Lizard Phrynocephalus versicolor and
+ Its Adaptation to the Colorful Sand of the Gobi Desert</a></div>
+        <p class="note">Jin and Aguilar-Gómez et al. 2022. Genome Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/2022Phrynocephalus.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/lizards.jpg">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/argeval.pdf" class="off">Evaluation of methods for estimating coalescence times using ancestral recombination graphs</a></div>
+        <p class="note">Brandt et al. 2022. Genetics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/argeval.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/argeval.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/sconce.pdf" class="off">SCONCE: a method for profiling copy number alterations in cancer evolution using single-cell whole genome sequencing</a></div>
+        <p class="note">Hui and Nielsen 2022. Bioinformatics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/sconce.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/sconce.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2021</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+
+    </div>
+  </div>
+  <div class="row">
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/AncestralClust.pdf" class="off">AncestralClust: clustering of divergent nucleotide sequences by ancestral sequence reconstruction using phylogenetic trees</a></div>
+        <p class="note">Pipes and Nielsen 2021. Bioinformatics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/AncestralClust.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/clusterancestral.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/ancestral.pdf" class="off">Detecting selection in multiple populations by modelling ancestral admixture components</a></div>
+        <p class="note">Cheng et al. 2021. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/ancestral.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/ROCcurves.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/swine.pdf" class="off">Human-Mediated Admixture and Selection Shape the Diversity on the Modern Swine (Sus scrofa) Y Chromosomes</a></div>
+        <p class="note">Ai et al. 2021. GigaScience.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/swine.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/ychromosome.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/ancestralrecom.pdf" class="off">The distribution of waiting distances in ancestral recombination graphs</a></div>
+        <p class="note">Deng, Song, and Nielsen. 2021. Theoretical Population Biology.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/ancestralrecom.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/Recombination.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/epas.pdf" class="off">The history and evolution of the Denisovan-EPAS1 haplotype in Tibetans</a></div>
+        <p class="note">Zhang et al. 2021. PNAS.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/epas.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/Tibet.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/investigate.pdf" class="off">Investigate the origins of COVID-19</a></div>
+        <p class="note">Bloom et al. 2021. Science.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/investigate.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/origins.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/adapintro.pdf" class="off">Inferring adaptive introgression using hidden Markov models</a></div>
+        <p class="note">Svedberg et al. 2021. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/adapintro.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/AdapIntro.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/deserts.pdf" class="off">Life in Deserts: The Genetic Basis of Mammalian Desert Adaptation</a></div>
+        <p class="note">Rocha et al. 2021. Trends in Ecology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/deserts.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/Deserts.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/uncertainty.pdf" class="off">Assessing uncertainty in the rooting of the SARS-CoV-2 phylogeny</a></div>
+        <p class="note">Pipes et al. 2021. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/uncertainty.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/SARS.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/caledna.pdf" class="off">The CALeDNA program: Citizen scientists and researchers inventory California's biodiversity</a></div>
+        <p class="note">Meyer et al. 2021. California Agriculture.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/caledna.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/eDNA.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/disentangle.pdf" class="off">Disentangling selection on genetically correlated polygenic traits via whole-genome genealogies</a></div>
+        <p class="note">Stern et al. 2021. AJHG.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/disentangle.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/Disentangle.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/synmut.pdf" class="off">Synonymous mutations and the molecular evolution of SARS-Cov-2 origins</a></div>
+        <p class="note">Wang, Pipes, and Nielsen. 2021. Virus Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/synmut.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/SynMut.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/mimicry.pdf" class="off">The
+ genomics of mimicry: Gene expression throughout development provides 
+insights into convergent and divergent phenotypes in a Müllerian mimicry
+ system</a></div>
+        <p class="note">Stuckert et al. 2021. Molecular Ecology.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/mimicry.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/frogsmimicry.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>2020</h1>
+      <hr style="height:3px;border:none;color:#808088;background-color:#808088;">
+
+    </div>
+  </div>
+  <div class="row">
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/miscarriage.pdf" class="off">The genetic architecture of sporadic and multiple consecutive miscarriage</a></div>
+        <p class="note">Laisk et al. 2020. Nature Communications.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/miscarriage.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/miscar.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/leapfrog.pdf" class="off">Divergence,
+ gene flow, and the origin of leapfrog geographic distributions: The 
+history of colour pattern variation in Phyllobates poison‐dart frogs</a></div>
+        <p class="note">Márquez et al. 2020. Molecular Ecology.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/leapfrog.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/frog.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/Tracts.pdf" class="off">On the distribution of tract lengths during adaptive introgression</a></div>
+        <p class="note">Shchur et al. 2020. G3: Genes, Genomes, Genetics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/Tracts.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/tract.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/viking.pdf" class="off">Population genomics of the Viking world</a></div>
+        <p class="note">Margaryan et al. 2020. Nature.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/viking.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/viking.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/parents.pdf" class="off">Inferring the ancestry of parents and grandparents from genetic data</a></div>
+        <p class="note">Pei et al. 2020. PLoS Computational Biology.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/parents.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/parents.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/sunflowers.pdf" class="off">Massive haplotypes underlie ecotypic differentiation in sunflowers</a></div>
+        <p class="note">Todesco et al. 2020. Nature.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/sunflowers.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/sun.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/volcano.pdf" class="off">VolcanoFinder: genomic scans for adaptive introgression</a></div>
+        <p class="note">Setter et al. 2020. PLoS Genetics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/volcano.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/volcano.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/pheno.pdf" class="off">Phenotypic convergence is not mirrored at the protein level in a lizard adaptive radiation</a></div>
+        <p class="note">Corbett-Detig et al. 2020. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/pheno.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/lizard.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/highalt.pdf" class="off">Ancient hybridization with an unknown population facilitated high-altitude adaptation of canids</a></div>
+        <p class="note">Wang et al. 2020. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/highalt.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/canid.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/point.pdf" class="off">A Bayesian framework for inferring the influence of sequence context on point mutations</a></div>
+        <p class="note">Ling et al. 2020. Molecular Biology and Evolution.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/point.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/point.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/ccr5.pdf" class="off">No statistical evidence for an effect of CCR5-Δ 32 on lifespan in the UK Biobank cohort</a></div>
+        <p class="note">Maier et al. 2020. Nature Medicine.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/ccr5.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/lifespan.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/contam.pdf" class="off">A likelihood method for estimating present-day human contamination in ancient male samples using low-depth X-chromosome data</a></div>
+        <p class="note">Moreno-Mayar et al. 2020. Bioinformatics.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/contam.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/contam.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+
+  </div>
+  <div class="row">
+
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/hair.pdf" class="off">Pronounced somatic bottleneck in mitochondrial DNA of human hair</a></div>
+        <p class="note">Barrett et al. 2020. Philosophical Transactions of the Royal Society B.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/hair.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/hair.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+
+
+
+
+
+    
+    
+    
+  
+  <div class="col-lg-4 paperbox">
+    <div class="media">
+      <div class="media-body">
+        <div class="smallhead mb-1"><a href="https://nielsen-lab.github.io/pdfs/papers/squid.pdf" class="off">A draft genome sequence of the elusive giant squid, Architeuthis dux</a></div>
+        <p class="note">Da Fonseca et al. 2020. GigaScience.</p>
+      </div>
+      <a href="https://nielsen-lab.github.io/pdfs/papers/squid.pdf">
+        <img class="ml-3" width="100" src="Ammon_Corl_papers_files/squid.png">
+      </a>
+    </div>
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+      </div>
+
+  </div>
+
+
+	</div>
+
+
+
+</body></html>
