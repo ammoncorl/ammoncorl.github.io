@@ -1,0 +1,4 @@
+>Illumina–TruSeq_DNA_UDI_sequence_for_adapter_trimming_read1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+>Illumina–TruSeq_DNA_UDI_sequence_for_adapter_trimming_read2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT

@@ -1,0 +1,54 @@
+Beginning Bioinformatics workshop
+
+10/28/21
+I subset some of the Pisgah libraries to have files with 1000 reads in them.
+
+ for file in Pis1*S1*fastq.gz; do gunzip -c $file|head -4000|gzip > /Users/ammoncorl/Desktop/Pisgah_reads/$file ; done
+
+ gunzip -c /Users/ammoncorl/Desktop/Pisgah_reads/Pis1_S1_L001_R1_001.fastq.gz |grep "@"|wc -l
+    1000
+
+source ~/.bash_rc
+
+screen -S ammon_fastqc bash run_fastqc_keep_zip.sh -i Pisgah_reads -o Pisgah_fastqc
+
+Control C to cancel an operation in the terminal.
+
+cd Pisgah_reads/
+
+multiqc .
+
+cd ..
+
+Do not make the output directory 
+
+#Modified hts_preproc.sh to hts_preproc_Pisgah_reads.sh
+
+screen -S ammon_cleaning bash hts_preproc_Pisgah_reads.sh
+
+do not use shell if want to troubleshoot
+bash hts_preproc_Pisgah_reads.sh
+
+bash run_fastqc_keep_zip.sh -i Pisgah_reads_cleaned3 -o Pisgah_cleaned_fastqc 
+
+screen -S ammon_fastqc bash run_fastqc_keep_zip.sh -i Pisgah_reads_cleaned -o Pisgah_cleaned_fastqc
+
+cd Pisgah_reads_cleaned
+
+multiqc .
+
+
+https://pip.pypa.io/en/stable/cli/pip_uninstall/
+python -m pip uninstall multiqc
+
+source ~/.bash_rc
+
+I had to change the permission for the program in the Linux folder
+chmod +x fastqc
+
+
+Ask does the cleaning improve quality? 
+
+Link to test data
+https://drive.google.com/drive/folders/1HjZtpbIJS8_Rkmg1lL3gO8LVRAoZ-V-s?usp=sharing
+
